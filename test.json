@@ -1,0 +1,142 @@
+[
+    {
+        "question": "JSON stands for _______.",
+        "option": [
+            "JavaScript Object Notation",
+            "Java Object Notation",
+            "JavaScript Object Normalization",
+            "JavaScript Object-Oriented Notation"
+        ],
+        "answer": 1,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "JSON is a _____ for storing and transporting data.",
+        "option": [
+            "xml format",
+            "text format",
+            "JavaScript",
+            "php format"
+        ],
+        "answer": 2,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "The JSON syntax is a subset of the _____ syntax.",
+        "option": [
+            "Ajax",
+            "Php",
+            "HTML",
+            "JavaScript"
+        ],
+        "answer": 4,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "What are the types of lists available in HTML",
+        "option": [
+            "Ordered , Unordered List",
+            "Bulleted Numbered List",
+            "Named, Unnamed List",
+            "None of the above"
+        ],
+        "answer": 1,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "How to create an ordered list in HTML?",
+        "option": [
+            "ul",
+            "ol",
+            "href",
+            "b"
+        ],
+        "answer": 2,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "HTML files are saved by default with the extension?",
+        "option": [
+            ".html",
+            ".h",
+            ".ht",
+            "none of the above"
+        ],
+        "answer": 1,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "We enclose HTML tags within?",
+        "option": [
+            "{}",
+            "<>",
+            "!!",
+            "none of the above"
+        ],
+        "answer": 2,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "What is the effect of the <b> tag?",
+        "option": [
+            "It converts the text within it to bold font.",
+            "It is used to write black-colored font.",
+            "It is used to change the font size.",
+            "none of the above"
+        ],
+        "answer": 1,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 10
+    },
+    {
+        "question": "Which of the following is correct about HTML?        ",
+        "option": [
+            "HTML uses User Defined Tags.",
+            "HTML uses tags defined within the language.",
+            "Both A and B",
+            "none of the above"
+        ],
+        "answer": 2,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 20
+    },
+    {
+        "question": "The JSON syntax is a subset of the _____ syntax.",
+        "option": [
+            "Ajax",
+            "Php",
+            "HTML",
+            "JavaScript"
+        ],
+        "answer": 4,
+        "title": "Choose correct option",
+        "isVisited": false,
+        "marked": 0,
+        "marks": 20
+    }
+]

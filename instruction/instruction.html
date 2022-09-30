@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Series Instruction</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- importing css file -->
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../global.css" />
+
+    <!-- icons css -->
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row login_cont">
+        <div class="col-sm-4 login_left">
+          <div class="login_left_top">
+            <div class="left_panel">
+              <div class="left_comp_box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-laptop left_icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"
+                  />
+                </svg>
+              </div>
+              <div style="text-align: left">
+                <b>Job test 2022 🤤</b>
+                <br />
+                <span style="color: rgb(255, 84, 84); font-size: 0.8em"
+                  >Score</span
+                >
+                <span class="bio">0/120</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="login_left_bottom"></div>
+        </div>
+        <div class="col-sm-8 login_right">
+          <div class="login_right_cont">
+            <h1>Job test 2022 🤤</h1>
+            <div class="mt-3">
+              <button id="start">START TEST</button>
+              <div style="color: white" class="mt-1">
+                Good luck for vixen exam
+                <b>Deadline Sep 24, 2022, 12:00:00 PM</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = () => {
+        if (
+          localStorage.getItem("register") == null ||
+          localStorage.getItem("register") == "null" ||
+          !localStorage.getItem("register")
+        ) {
+        window.location.href = "/login/index.html";
+
+        }
+      };
+
+      document.getElementById("start").onclick = () => {
+        window.location.href = "/testpanel/index.html";
+      };
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

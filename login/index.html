@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Series Login</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- importing css file -->
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../global.css" />
+
+    <!-- icons css -->
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row login_cont">
+        <div class="col-sm-4 login_left">
+          <div class="login_left_top">
+            <span>
+              <h1>Job test 2022 😋</h1>
+              <code
+                style="background-color: #fff; padding: 3px; border-radius: 5px"
+              >
+                Organised by Me
+              </code>
+            </span>
+          </div>
+
+          <div class="login_left_bottom"></div>
+        </div>
+        <div class="col-sm-8 login_right">
+          <h2>Register</h2>
+
+          <div>
+            <form id="register" style="text-align: left" class="was-validated">
+              <div class="form-row">
+                <div class="col-sm-12 my-2 form-outline">
+                  <label for="inlineFormInputGroupUsername"> Name </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">👨🏻‍🎓</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control is-valid"
+                      id="inlineFormInputGroupUsername"
+                      placeholder="Username"
+                      required
+                      name="username"
+                    />
+                    <div class="invalid-feedback">Please fill the username</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-6 my-2">
+                  <label for="inlineFormInputGroupEmail"> Email </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">📧</div>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control is-valid"
+                      required
+                      id="inlineFormInputGroupEmail"
+                      placeholder="Email"
+                      name="email"
+                    />
+                    <div class="invalid-feedback">
+                      Please fill the valid email
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                  <label for="inlineFormInputGroupPhone"> Phone Number </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">🤙🏻</div>
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control is-valid"
+                      required
+                      id="inlineFormInputGroupPhone"
+                      placeholder="Phone Number"
+                      max="9999999999"
+                      min="0000000000"
+                      name="phoneno"
+                    />
+                    <div class="invalid-feedback">
+                      Please fill the phone number
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-12 my-2" form-outline>
+                  <label for="inlineFormInputGroupLocation"> Location </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">🚩</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control is-valid"
+                      required
+                      id="inlineFormInputGroupLocation"
+                      placeholder="Enter your location"
+                      name="location"
+                    />
+                    <div class="invalid-feedback">Please fill the location</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-sm-6 my-2">
+                  <label for="inlineFormInputGroupSelect"> Gender </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">👯‍♂️</div>
+                    </div>
+                    <select
+                      class="form-control is-valid"
+                      required
+                      id="inlineFormInputGroupSelect"
+                      name="gender"
+                    >
+                      <option value="">Select you gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                    </select>
+                    <div class="invalid-feedback">Please fill the gender</div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                  <label for="inlineFormInputGroupdob"> Date of birth </label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">⏳</div>
+                    </div>
+                    <input
+                      type="date"
+                      class="form-control is-valid"
+                      required
+                      id="inlineFormInputGroupdob"
+                      name="date"
+                      placeholder="Date of birth"
+                    />
+                    <div class="invalid-feedback">Please fill the D.O.B</div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn submit_button col-sm-12 my-2"
+                form-outline
+              >
+                Proceed
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelector("form").onsubmit = (e) => {
+        e.preventDefault();
+        const formData = document.getElementById("register").elements;
+        var obj = {};
+        for (var i = 0; i < formData.length; i++) {
+          var item = formData.item(i);
+          obj[item.name] = item.value;
+        }
+
+        localStorage.setItem("register", JSON.stringify(obj));
+        window.location.href = "/instruction/instruction.html";
+      };
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
